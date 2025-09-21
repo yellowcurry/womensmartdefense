@@ -30,7 +30,7 @@
 }
 
 body {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	max-width: 1366px; /* previously 96% */
 	
@@ -296,7 +296,9 @@ nav a:hover {
 
 /* main content style */
 section {
-	padding-top: 70px; /* Adjust to match your header height */
+	margin: 0;
+	padding: 0;
+	/* padding-top: 70px; Adjust to match your header height */
 }
 
 
@@ -517,11 +519,9 @@ img.shadow {box-shadow: 0 0px 3px rgba(0,0,0,0.12);}
 /* flex styles small screen */
 /* Responsive adjustment for mobile */
 @media (max-width: 600px) {
-  header {
-    /* You can adjust height or padding for mobile if needed */
-  }
+ 
   section {
-    padding-top: 70px; /* Match header height on mobile */
+    padding-top: 0x;
   }
     .titlename {
     text-align: center;
