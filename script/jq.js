@@ -1,24 +1,14 @@
 $(function() {
+    var allQuotes = $(".ref");
+    var currentQuote = 0;
 
-	var allQuotes = $(".ref");
-	var currentQuote = 0;
+    allQuotes.hide().eq(0).show(); // Hide all, show first
 
-	function changeQuote() {
-
-		$(allQuotes[currentQuote]).fadeOut(800, function() {
-
-
-		if (currentQuote == allQuotes.length - 1) {
-				currentQuote = 0;
-		} else {
-			currentQuote ++;
-		}
-
-		$(allQuotes[currentQuote]).fadeIn(800);
-
-
-		}); //end of changeQuote()
-	}
-	var quoteTimer = setInterval(changeQuote, 6500);	
-
-});//end of doc ready
+    function changeQuote() {
+        $(allQuotes[currentQuote]).fadeOut(800, function() {
+            currentQuote = (currentQuote == allQuotes.length - 1) ? 0 : currentQuote + 1;
+            $(allQuotes[currentQuote]).fadeIn(800);
+        });
+    }
+    var quoteTimer = setInterval(changeQuote, 6500);
+});
