@@ -28,16 +28,18 @@
 
 body {
 	margin: 0 auto;
+	padding: 0;
 	max-width: 1366px; /* previously 96% */
 	
 }
 
-header { 
-	position: sticky;
-	top: 0;
-	padding: 0;     
-    margin: 0 auto;
-	
+header {
+  position: sticky;
+  top: 0;
+  background: #fff; /* or your preferred color */
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 
  footer {
@@ -291,7 +293,7 @@ nav a:hover {
 
 /* main content style */
 section {
-	margin: 0px;
+	padding-top: 70px; /* Adjust to match your header height */
 }
 
 
@@ -510,7 +512,15 @@ img.shadow {box-shadow: 0 0px 3px rgba(0,0,0,0.12);}
 }
 
 /* flex styles small screen */
-
+/* Responsive adjustment for mobile */
+@media (max-width: 600px) {
+  header {
+    /* You can adjust height or padding for mobile if needed */
+  }
+  section {
+    padding-top: 70px; /* Match header height on mobile */
+  }
+}
 
 /* flex styles big screen */
 
