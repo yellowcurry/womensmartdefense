@@ -2,7 +2,10 @@
 	.ref, .titlename {
 		font-size: 16px;
 		padding: 8px;
-		text-align: left;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 		width: 100%;
 		box-sizing: border-box;
 		word-break: break-word;
@@ -519,6 +522,12 @@ img.shadow {box-shadow: 0 0px 3px rgba(0,0,0,0.12);}
   }
   section {
     padding-top: 70px; /* Match header height on mobile */
+  }
+    .titlename {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
